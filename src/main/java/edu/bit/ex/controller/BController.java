@@ -138,6 +138,8 @@ public class BController {
        
 		boardList = boardService.selectBoardListPage(criteria); 
 		
+		System.out.println("게시물 수를 구함:" + boardList.size());
+		 
 		model.addAttribute("list", boardList);
 		model.addAttribute("pageMaker", pageMaker);
 

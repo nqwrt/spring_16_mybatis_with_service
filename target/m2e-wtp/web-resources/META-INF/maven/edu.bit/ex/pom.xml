@@ -37,9 +37,9 @@
 		
 		<!-- 오라클 JDBC 드라이버 -->
 		<dependency>
-		    <groupId>com.oracle</groupId>
+		    <groupId>oracle</groupId>
 		    <artifactId>ojdbc6</artifactId>
-		    <version>12.1.0.2</version>
+		    <version>11.2.0.3</version>
 		</dependency>
 		
 		<!-- MyBatis 라이브러리 -->

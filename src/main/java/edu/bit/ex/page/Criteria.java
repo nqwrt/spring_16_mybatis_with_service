@@ -12,8 +12,9 @@ public class Criteria {
     	if(page == 1)
     		startNum = 1;
     	else{
-    		startNum = page * perPageNum;
-    	}	
+    		startNum = (page * perPageNum) - perPageNum + 1;
+    	}
+    	System.out.println("스타트넘:" + startNum);
 		return startNum;
 	}
 
@@ -22,7 +23,9 @@ public class Criteria {
 	}
 
 	public int getEndNum() {
-		endNum  = getStartNum() + 10;
+		
+		endNum  = page * perPageNum;
+		System.out.println("엔드넘:" + endNum);
 		return endNum;
 	}
 
@@ -56,6 +59,8 @@ public class Criteria {
         }else{
             this.page = page;
         }
+        
+        System.out.println("setPage:" + page);
     }
     public int getPerPageNum() {
          
