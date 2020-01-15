@@ -1,14 +1,14 @@
-1.ÄÁÆ®·Ñ·¯(Controller) : Å¬¶óÀÌ¾ðÆ®¿¡¼­ ¿äÃ»ÀÌ µé¾î¿Ã ¶§, ÇØ´ç ¿äÃ»À» ¼öÇàÇÒ ºñÁî´Ï½º ·ÎÁ÷À» Á¦¾îÇÏ´Â °´Ã¼´Ù. 
-2.½ºÇÁ¸µ¿¡¼­´Â ÄÁÆ®·Ñ·¯¿¡¼­ ¼¼ºÎÀûÀ¸·Î ¼­ºñ½º ·¹ÀÌ¾î(Service Layer)¸¦ ¸¸µé¾î ÇØ´ç ¿äÃ»»çÇ×À» °´Ã¼ ÁöÇâÀûÀÎ ¹æ½ÄÀ¸·Î Á» ´õ ¼¼ºÐÈ­ÇÏ¿© °ü¸®ÇÑ´Ù. 
-3.¼­ºñ½º(Service) : ¼­ºñ½º ·¹ÀÌ¾î(Service Layer)´Ü¿¡¼­ ¼¼ºÐÈ­µÈ ºñÁî´Ï½º·ÎÁ÷À» Ã³¸®ÇÏ´Â °´Ã¼ 
-4.DAO(Data Access Object) : DB¸¦ »ç¿ëÇØ µ¥ÀÌÅÍ¸¦ Á¶È¸ÇÏ°Å³ª Á¶ÀÛÇÏ´Â ±â´ÉÀ» Àü´ãÇÏµµ·Ï ¸¸µç °´Ã¼
-5.VO(Value Object) : °¢ °èÃþ°£ µ¥ÀÌÅÍ ±³È¯À» À§ÇÑ ÀÚ¹Ù °´Ã¼¸¦ ÀÇ¹ÌÇÑ´Ù. ÀÌ °´Ã¼´Â µ¥ÀÌÅÍ¸¦ °¢ ·¹ÀÌ¾î °£¿¡ Àü´ÞÇÏ´Â ¸ñÀûÀ» °¡Áö°í ÀÖÀ¸¸ç °´Ã¼ÀÇ ¼Ó¼º°ú
-getter, setter¸¸ °¡Áö°í ÀÖ´Ù. DTO(Data Transfer Object)·Î ºÒ¸± ¼öµµ ÀÖ´Ù. 
+1.ì»¨íŠ¸ë¡¤ëŸ¬(Controller) : í´ë¼ì´ì–¸íŠ¸ì—ì„œ ìš”ì²­ì´ ë“¤ì–´ì˜¬ ë•Œ, í•´ë‹¹ ìš”ì²­ì„ ìˆ˜í–‰í•  ë¹„ì¦ˆë‹ˆìŠ¤ ë¡œì§ì„ ì œì–´í•˜ëŠ” ê°ì²´ë‹¤. 
+2.ìŠ¤í”„ë§ì—ì„œëŠ” ì»¨íŠ¸ë¡¤ëŸ¬ì—ì„œ ì„¸ë¶€ì ìœ¼ë¡œ ì„œë¹„ìŠ¤ ë ˆì´ì–´(Service Layer)ë¥¼ ë§Œë“¤ì–´ í•´ë‹¹ ìš”ì²­ì‚¬í•­ì„ ê°ì²´ ì§€í–¥ì ì¸ ë°©ì‹ìœ¼ë¡œ ì¢€ ë” ì„¸ë¶„í™”í•˜ì—¬ ê´€ë¦¬í•œë‹¤. 
+3.ì„œë¹„ìŠ¤(Service) : ì„œë¹„ìŠ¤ ë ˆì´ì–´(Service Layer)ë‹¨ì—ì„œ ì„¸ë¶„í™”ëœ ë¹„ì¦ˆë‹ˆìŠ¤ë¡œì§ì„ ì²˜ë¦¬í•˜ëŠ” ê°ì²´ 
+4.DAO(Data Access Object) : DBë¥¼ ì‚¬ìš©í•´ ë°ì´í„°ë¥¼ ì¡°íšŒí•˜ê±°ë‚˜ ì¡°ìž‘í•˜ëŠ” ê¸°ëŠ¥ì„ ì „ë‹´í•˜ë„ë¡ ë§Œë“  ê°ì²´
+5.VO(Value Object) : ê° ê³„ì¸µê°„ ë°ì´í„° êµí™˜ì„ ìœ„í•œ ìžë°” ê°ì²´ë¥¼ ì˜ë¯¸í•œë‹¤. ì´ ê°ì²´ëŠ” ë°ì´í„°ë¥¼ ê° ë ˆì´ì–´ ê°„ì— ì „ë‹¬í•˜ëŠ” ëª©ì ì„ ê°€ì§€ê³  ìžˆìœ¼ë©° ê°ì²´ì˜ ì†ì„±ê³¼
+getter, setterë§Œ ê°€ì§€ê³  ìžˆë‹¤. DTO(Data Transfer Object)ë¡œ ë¶ˆë¦´ ìˆ˜ë„ ìžˆë‹¤. 
 
-Mybatis ¿¡¼­ SQLÀ» ÀúÀåÇÑ MAPPER¸¦ ¿¬°áÇÏ´Â ¹æ¹ýÀº Å©°Ô 2°¡Áö ÀÌ´Ù.
+Mybatis ì—ì„œ SQLì„ ì €ìž¥í•œ MAPPERë¥¼ ì—°ê²°í•˜ëŠ” ë°©ë²•ì€ í¬ê²Œ 2ê°€ì§€ ì´ë‹¤.
 
-1) Mapper namespace ¸¦ Á÷Á¢ ÀÔ·ÂÇÏ¿© È£ÃâÇÏ´Â ¹æ¹ý.
-2) Interface Å¬·¡½º¸¦ ¸¸µé¾î¼­ ¸ÅÇÎ, È£ÃâÇÏ´Â ¹æ¹ý.
+1) Mapper namespace ë¥¼ ì§ì ‘ ìž…ë ¥í•˜ì—¬ í˜¸ì¶œí•˜ëŠ” ë°©ë²•.
+2) Interface í´ëž˜ìŠ¤ë¥¼ ë§Œë“¤ì–´ì„œ ë§¤í•‘, í˜¸ì¶œí•˜ëŠ” ë°©ë²•.
 
 
 DECLARE
@@ -28,9 +28,9 @@ DECLARE
 	
        END LOOP; 
 	
-       DBMS_OUTPUT.PUT_LINE('µ¥ÀÌÅÍ ÀÔ·Â ¿Ï·á'); 
-       DBMS_OUTPUT.PUT_LINE(v_cnt-100 || '°³ÀÇ µ¥ÀÌÅÍ°¡ ÀÔ·ÂµÇ¾ú½À´Ï´Ù'); 
+       DBMS_OUTPUT.PUT_LINE('ë°ì´í„° ìž…ë ¥ ì™„ë£Œ'); 
+       DBMS_OUTPUT.PUT_LINE(v_cnt-100 || 'ê°œì˜ ë°ì´í„°ê°€ ìž…ë ¥ë˜ì—ˆìŠµë‹ˆë‹¤'); 
 		
     END; 
 
-ÃâÃ³: https://lemontia.tistory.com/404 
+ì¶œì²˜: https://lemontia.tistory.com/404 
